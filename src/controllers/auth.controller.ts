@@ -11,5 +11,5 @@ export async function signIn(req: Request, res: Response) {
 
   res.locals['token'] = token;
 
-  res.sendStatus(200);
+  res.status(200).send({ token });
 }
